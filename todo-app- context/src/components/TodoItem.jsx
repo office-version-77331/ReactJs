@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import TodoContext from '../store/TodoContext';
 
-const TodoItem = ({id, todoText, todoDate, deteleTodoItem}) => {
+const TodoItem = ({todoDate,todoText}) => {
+  const {deteleTodoItem} = useContext(TodoContext);
+
   return (
     <div className='flex flex-auto gap-5 px-3 py-2'>
       <div className='flex-1 px-3 py-2 '>{todoText}</div>
