@@ -1,0 +1,10 @@
+function App() {
+ const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route > 
+      <Route path='/' element={<Home/>}/> 
+      <Route path='/about' element={<About/>}/> 
+      <Route path='/other' element={<Other/>}/>
+    </Route>
+  )
+ );
