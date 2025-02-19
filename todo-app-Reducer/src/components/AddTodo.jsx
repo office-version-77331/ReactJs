@@ -19,7 +19,7 @@ const AddTodo = () => {
         onChange={(e) => setTextVal(e.target.value)}
         placeholder='Add todo here....'
         
-        />
+        /> 
         <input className='flex-1 px-3 py-2 '
         type='date'
         value={dateVal}
